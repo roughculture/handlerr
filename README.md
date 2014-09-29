@@ -31,6 +31,21 @@ fs.readFile('myfile.txt', handle(function(file) {
 }));
 ```
 
+If you prefer to throw errors, then you may use `handle.throw` like so:
+
+```javascript
+db.connect(handle.throw(function(db) {
+  // ...
+}));
+```
+
+Alternatively, if you want to throw errors by default, you can just grab
+`.throw` in your require call:
+
+```javascript
+var handle = require('handlerr').throw;
+```
+
 Handlers
 ========
 
