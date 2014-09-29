@@ -4,10 +4,6 @@ var handle = module.exports = function(cb, handler) {
       if (handler) {
         handler(err);
       } else {
-        if (cb.name) {
-          console.error('Error in function: ' + cb.name);
-        }
-
         if (err instanceof Error) {
           console.error(err.stack);
         } else {
@@ -30,10 +26,6 @@ handle.throw = function(cb, handler) {
       if (handler) {
         handler(err);
       } else {
-        if (cb.name) {
-          console.error('Error in function: ' + cb.name);
-        }
-
         if (err instanceof Error) {
           throw err;
         } else {
