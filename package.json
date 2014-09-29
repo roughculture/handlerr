@@ -1,6 +1,6 @@
 {
   "name": "handlerr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple Node.js utility for handling errors",
   "keywords": [
     "util",
