@@ -17,7 +17,9 @@ var handle = module.exports = function(cb, handler) {
     } else {
       var args = Array.prototype.slice.call(arguments, 1);
 
-      cb(args);
+      if (typeof cb === 'function') {
+        cb(args);
+      }
     }
   };
 };
@@ -41,7 +43,9 @@ handle.throw = function(cb, handler) {
     } else {
       var args = Array.prototype.slice.call(arguments, 1);
 
-      cb(args);
+      if (typeof cb === 'function') {
+        cb(args);
+      }
     }
   };
 };
