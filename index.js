@@ -41,3 +41,9 @@ handle.throw = function(cb, handler) {
     }
   };
 };
+
+handle.custom = function(handler) {
+  return function(cb) {
+    return handle(cb, handler);
+  };
+};
