@@ -1,0 +1,19 @@
+{
+  "name": "handlerr",
+  "description": "A simple Node.js utility for handling errors",
+  "keywords": [
+    "util",
+    "errors"
+  ],
+  "author": "Tenor Biel <tenorbiel@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roughculture/handlerr"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ]
+}
