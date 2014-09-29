@@ -54,3 +54,6 @@ Handlers
 
 - `handle.throw`: For errors that should stop the system. This will just
   `throw` any errors that come through.
+
+- `handle.custom(handler)`: For creating custom error handlers. The `handler`
+  function takes an error argument.
